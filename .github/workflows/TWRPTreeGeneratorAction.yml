@@ -37,7 +37,7 @@ jobs:
           touch info.md
           echo "提交日期：$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S')" >> info.md
           echo "ROM 下载直链：${{ github.event.inputs.rom_url }}" >> info.md
-          mv ~/Firmware_extractor/out/init_boot.img ~/Firmware_extractor/out/boot.img
+          if [ -f ~/Firmware_extractor/out/init_boot.img ]; then mv ~/Firmware_extractor/out/init_boot.img ~/Firmware_extractor/out/boot.img; fi
           pip3 install twrpdtgen
           python3 -m twrpdtgen ~/Firmware_extractor/out/boot.img
           cd ~
