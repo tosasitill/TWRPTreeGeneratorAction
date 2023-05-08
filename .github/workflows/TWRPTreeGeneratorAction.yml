@@ -41,7 +41,7 @@ jobs:
           pip3 install twrpdtgen
           python3 -m twrpdtgen ~/Firmware_extractor/out/boot.img
           cd ~
-          7z a -r -t7z ~/output GeneratedTWRPDeviceTree.7z
+          7z a /home/runner/work/TWRPTreeGeneratorAction/TWRPTreeGeneratorAction/output ~/GeneratedTWRPDeviceTree.7z
 
       - name: Upload Device Tree
         uses: ncipollo/release-action@v1.12.0
