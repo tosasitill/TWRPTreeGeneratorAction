@@ -1,3 +1,2 @@
-# TWRPTreeGeneratorAction
-> a repo using github action generate TWRP device tree.
-Thanks to [twrpdtgen](https://github.com/twrpdtgen/twrpdtgen)
+# TWRPTreeGeneratorAction tools
+Thanks to [Firmware_extractor](https://github.com/ShivamKumarJha/Firmware_extractor)
