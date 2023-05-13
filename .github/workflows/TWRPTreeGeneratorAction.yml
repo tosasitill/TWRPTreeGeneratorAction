@@ -29,7 +29,7 @@ jobs:
       - name: Generate Device Tree
         run: |
           cd ~
-          git clone --recurse-submodules https://github.com/tosasitill/TWRPTreeGeneratorAction.git -b tools
+          git clone --recurse-submodules https://github.com/tosasitill/TWRPTreeGeneratorAction.git -b tools Firmware_extractor
           cd Firmware_extractor
           aria2c -s 10 -x 10 -d . -o firmware.zip "${{ github.event.inputs.rom_url }}"
           ./extractor.sh firmware.zip
