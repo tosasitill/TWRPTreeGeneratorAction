@@ -79,9 +79,9 @@ splituapp="$toolsdir/splituapp"
 
 romzip="$(realpath $1)"
 romzipext="${romzip##*.}"
-PARTITIONS="boot"
-EXT4PARTITIONS="boot"
-OTHERPARTITIONS="boot-verified.img:boot"
+PARTITIONS="recovery"
+EXT4PARTITIONS="recovery"
+OTHERPARTITIONS=""
 
 echo "Create Temp and out dir"
 outdir="$LOCALDIR/out"
